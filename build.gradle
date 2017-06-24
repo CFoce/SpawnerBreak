@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    maven {
+        name 'Spigot'
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+     testCompile "org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT"
+}

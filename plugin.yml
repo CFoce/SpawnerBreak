@@ -1,0 +1,37 @@
+name: SpawnerBreak
+main: com.akaiha.spawnerbreak.SpawnerBreak
+version: 1.4
+description: Created by Akaiha
+
+commands:
+  SpawnerBreak:
+    description: All Commands In SpawnerBreak
+    aliases: [sbreaker, sbreak]
+    
+permissions:
+  spawnerbreak.*:
+    default: op
+    description: Parent permission for SpawnerBreak
+    children:
+      spawnerbreak.give: true
+      spawnerbreak.mine: true
+      spawnerbreak.place: true
+      spawnerbreak.info: true
+      spawnerbreak.change.*: true
+  spawnerbreak.change.*:
+    description: Parent permission for change commands
+    children:
+      spawnerbreak.change.entity: true
+      spawnerbreak.change.delay: true
+  spawnerbreak.give:
+    description: Permission to give a spawner
+  spawnerbreak.mine:
+    description: Permission to drop a spawner when mined
+  spawnerbreak.place:
+    description: Permission to place a spawner
+  spawnerbreak.info:
+    description: Permission to get spawner info
+  spawnerbreak.change.entity:
+    description: Permission to change spawner entity
+  spawnerbreak.change.delay:
+    description: Permission to change spawner delay
