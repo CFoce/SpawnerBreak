@@ -4,7 +4,7 @@ version: 1.4
 description: Created by Akaiha
 
 commands:
-  SpawnerBreak:
+  spawnerbreak:
     description: All Commands In SpawnerBreak
     aliases: [sbreaker, sbreak]
     

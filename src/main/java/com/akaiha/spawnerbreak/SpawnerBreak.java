@@ -8,7 +8,7 @@ import com.akaiha.spawnerbreak.listener.BreakListener;
 public class SpawnerBreak extends JavaPlugin {
 
 	public void onEnable() {
-		getCommand("SpawnerBreak").setExecutor(new CommandManager());
+		getCommand("spawnerbreak").setExecutor(new CommandManager());
 		getServer().getPluginManager().registerEvents(new BreakListener(), this);
 	}
 	
