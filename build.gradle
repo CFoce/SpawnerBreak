@@ -1,13 +1,17 @@
 apply plugin: 'java'
 
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+def spigotVersion = '1.12-R0.1-SNAPSHOT'
+
 repositories {
     jcenter()
     maven {
-        name 'Spigot'
         url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
     }
 }
 
 dependencies {
-     testCompile "org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT"
+	compile group: 'org.bukkit', name: 'bukkit', version: spigotVersion
 }
