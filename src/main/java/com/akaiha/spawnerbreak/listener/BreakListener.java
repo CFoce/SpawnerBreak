@@ -24,7 +24,7 @@ public class BreakListener implements Listener {
     public void onSpawnerBreak(BlockBreakEvent event) {
         Block block = event.getBlock();
         Player player = event.getPlayer();
-        ItemStack item = player.getInventory().getItemInMainHand();
+        ItemStack item = player.getInventory().getItemInHand();
         if (block.getType() == Material.MOB_SPAWNER
         	&& !event.isCancelled()
             && player.hasPermission("spawnerbreak.mine")
@@ -41,7 +41,7 @@ public class BreakListener implements Listener {
     public void onSpawnerPlace(BlockPlaceEvent event) {
         Block block = event.getBlock();
         Player player = event.getPlayer();
-        ItemStack item = player.getInventory().getItemInMainHand();
+        ItemStack item = player.getInventory().getItemInHand();
         List<String> lore = item.getItemMeta().getLore();
         if (block.getType() == Material.MOB_SPAWNER 
         	&& !event.isCancelled()

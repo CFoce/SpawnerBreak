@@ -3,7 +3,7 @@ apply plugin: 'java'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-def spigotVersion = '1.12-R0.1-SNAPSHOT'
+def spigotVersion = '1.8.8-R0.1-SNAPSHOT'
 
 repositories {
     jcenter()
@@ -14,4 +14,8 @@ repositories {
 
 dependencies {
 	compile group: 'org.bukkit', name: 'bukkit', version: spigotVersion
+}
+
+jar {
+    baseName 'Spawners'
 }
